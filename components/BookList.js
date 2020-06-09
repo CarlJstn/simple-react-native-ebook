@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, Text, FlatList, StyleSheet} from 'react-native';
+import {View, FlatList, StyleSheet} from 'react-native';
 
 import Header from './Header';
 import BookButton from './BookButton';
@@ -22,11 +22,11 @@ const BookList = () => {
     },
   ]);
 
-  handleBookClick = (book) => {
+  const handleBookClick = (book) => {
     setActiveBook(book);
   };
 
-  handleBackClick = () => {
+  const handleBackClick = () => {
     setActiveBook(false);
   };
 

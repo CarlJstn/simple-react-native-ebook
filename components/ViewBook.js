@@ -12,8 +12,8 @@ const ViewBook = ({book, handleBackClick}) => {
 
   fetch(book.url)
     .then((r) => r.text())
-    .then((text) => {
-      setText(text);
+    .then((url) => {
+      setText(url);
     })
     .catch((err) => setText(err));
   return (
